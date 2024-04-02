@@ -10,22 +10,26 @@
         <h1>SORTIES DE LA SEMAINE</h1>
         <div id="inner-container">
             <?php
-            // Connexion à la base de données
-            $host = 'localhost';
-            $db   = 'poc_films';
-            $user = 'root';
-            $pass = '';
-            $charset = 'utf8mb4';
+            // Database connection
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "math_index";
 
-            $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-            $pdo = new PDO($dsn, $user, $pass);
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
 
             // Requête pour obtenir les films
             $sql = "SELECT titre, description, image FROM films";
-            $stmt = $pdo->query($sql);
+            $result = $conn->query($sql);
 
             // Générer le HTML
-            while ($row = $stmt->fetch())
+            while ($row = $result->fetch_assoc())
             {
                 echo '<div class="film">';
                 echo '<img src="' . $row['image'] . '" alt="' . $row['titre'] . '">';
