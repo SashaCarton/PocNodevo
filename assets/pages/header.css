@@ -4,7 +4,7 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 3vw;
     letter-spacing: 2.5px;
 }
 
@@ -16,21 +16,27 @@ header span {
 header a {
     color: black;
     text-decoration: none;
-    font-size: 27px;
+    font-size: 1.5vw;
     font-weight: 600;
 }
 
 header li {
     list-style-type: none;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header ul {
     margin: 10px 0;
+    width: 100%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header nav {
     padding: 10px 0;
-    width: 100%;
+    width: 90%;
+    display: flex;
+    margin: auto;
 }
