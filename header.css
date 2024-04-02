@@ -1,0 +1,36 @@
+header {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2.5px;
+}
+
+header span {
+    color: rgb(255, 207, 19);
+    font-weight: bold;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+header li {
+    list-style-type: none;
+    margin: auto;
+}
+
+header ul {
+    margin: 10px 0;
+    display: flex;
+}
+
+header nav {
+    padding: 10px 0;
+    width: 100%;
+}
