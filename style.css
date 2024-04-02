@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
    background-color: rgb(224, 224, 224);
    padding-left: 10%;
    padding-right: 10%;
@@ -46,7 +46,7 @@ img {
 }
 h1 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     margin-bottom: 50px;
 }
@@ -82,7 +82,7 @@ p {
 .trailer-button {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: orange;
