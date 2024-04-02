@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 02 avr. 2024 à 10:12
+-- Généré le : mar. 02 avr. 2024 à 11:27
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.0.30
 
@@ -39,14 +39,21 @@ CREATE TABLE `films` (
 --
 
 INSERT INTO `films` (`id`, `titre`, `description`, `image`) VALUES
-(1, 'Film 1', 'Ceci est une description du Film 1.', 'chemin/vers/image1.jpg'),
-(2, 'Film 2', 'Ceci est une description du Film 2.', 'chemin/vers/image2.jpg'),
-(3, 'Film 3', 'Ceci est une description du Film 3.', 'chemin/vers/image3.jpg'),
-(4, 'Film 4', 'Ceci est une description du Film 4.', 'chemin/vers/image4.jpg'),
-(5, 'Film 5', 'Ceci est une description du Film 5.', 'chemin/vers/image1.jpg'),
-(6, 'Film 6', 'Ceci est une description du Film 6.', 'chemin/vers/image2.jpg'),
-(7, 'Film 7', 'Ceci est une description du Film 7.', 'chemin/vers/image3.jpg'),
-(8, 'Film 8', 'Ceci est une description du Film 8.', 'chemin/vers/image4.jpg');
+(26, 'Petit Ours', 'Ce film parle d\'un petit ours qui dort.', NULL),
+(27, 'Faible Ours', 'Ce film parle d\'un faible ours qui court.', NULL),
+(28, 'Fort Lion', 'Ce film parle d\'un fort lion qui nage.', NULL),
+(29, 'Lent Ours', 'Ce film parle d\'un lent ours qui saute.', NULL),
+(30, 'Fort Chat', 'Ce film parle d\'un fort chat qui saute.', NULL),
+(31, 'Petit Chien', 'Ce film parle d\'un petit chien qui nage.', NULL),
+(32, 'Fort Ours', 'Ce film parle d\'un fort ours qui saute.', NULL),
+(33, 'Faible Tigre', 'Ce film parle d\'un faible tigre qui dort.', NULL),
+(34, 'Lent Chien', 'Ce film parle d\'un lent chien qui nage.', NULL),
+(35, 'Petit Chat', 'Ce film parle d\'un petit chat qui crie.', NULL),
+(36, 'Rapide Cheval', 'Ce film parle d\'un rapide cheval qui crie.', NULL),
+(37, 'Rapide Tigre', 'Ce film parle d\'un rapide tigre qui nage.', NULL),
+(38, 'Lent Chat', 'Ce film parle d\'un lent chat qui crie.', NULL),
+(39, 'Petit Chien', 'Ce film parle d\'un petit chien qui vole.', NULL),
+(40, 'Rapide Lion', 'Ce film parle d\'un rapide lion qui vole.', NULL);
 
 --
 -- Index pour les tables déchargées
@@ -66,7 +73,7 @@ ALTER TABLE `films`
 -- AUTO_INCREMENT pour la table `films`
 --
 ALTER TABLE `films`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
