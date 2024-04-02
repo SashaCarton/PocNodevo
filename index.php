@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poc</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>SORTIES DE LA SEMAINE</h1>
-        <div id="inner-container">
+        <div class="inner-container">
             <?php
-            // Connexion à la base de données
-            $host = 'localhost';
-            $db   = 'nom_de_la_base_de_donnees';
-            $user = 'username';
-            $pass = 'password';
-            $charset = 'utf8mb4';
+            // Database connection
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "poc_films";
 
-            $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-            $pdo = new PDO($dsn, $user, $pass);
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
 
             // Requête pour obtenir les films
             $sql = "SELECT titre, description, image FROM films";
-            $stmt = $pdo->query($sql);
+            $result = $conn->query($sql);
 
             // Générer le HTML
-            while ($row = $stmt->fetch())
+            while ($row = $result->fetch_assoc())
             {
                 echo '<div class="film">';
                 echo '<img src="' . $row['image'] . '" alt="' . $row['titre'] . '">';
