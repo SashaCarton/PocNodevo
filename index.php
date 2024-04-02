@@ -33,13 +33,39 @@
             while ($row = $result->fetch_assoc())
             {
                 echo '<div class="film">';
-                echo '<img src="' . $row['image'] . '" alt="' . $row['titre'] . '">';
+                echo '<img src="assets/images/2118693.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg">';
                 echo '<h2>' . $row['titre'] . '</h2>';
                 echo '<p>' . $row['description'] . '</p>';
+                echo '<button class="trailer-button">BANDE ANNONCE</button>';
                 echo '</div>';
             }
             ?>
         </div>
     </div>
+    <div class="footer">
+        <button id="loadMore">Voir plus de résultats</button>
+    </div>
+    <script>
+        var films = document.querySelectorAll('.film');
+
+        for (var i = 4; i < films.length; i++) {
+            films[i].style.display = 'none';
+        }
+
+        document.getElementById('loadMore').addEventListener('click', function() {
+            // Compter combien de films sont actuellement affichés
+            var count = 0;
+            for (var i = 0; i < films.length; i++) {
+                if (films[i].style.display === 'block') {
+                    count++;
+                }
+            }
+
+            // Afficher 4 films supplémentaires
+            for (var i = count; i < count + 4 && i < films.length; i++) {
+                films[i].style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

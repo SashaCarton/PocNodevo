@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'nom_de_la_base_de_donnees';
+$db   = 'poc_films';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
@@ -9,7 +9,7 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $pdo = new PDO($dsn, $user, $pass);
 
 // Chemin vers le fichier image
-$imagePath = 'chemin/vers/votre/image.jpg';
+$imagePath = 'assets/images/2118693.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg';
 
 // Lire le contenu du fichier image
 $imageData = file_get_contents($imagePath);
