@@ -22,6 +22,8 @@ $adjectifs = ['Grand', 'Petit', 'Rapide', 'Lent', 'Fort', 'Faible'];
 $noms = ['Chien', 'Chat', 'Cheval', 'Lion', 'Tigre', 'Ours'];
 $actions = ['Court', 'Saute', 'Nage', 'Vole', 'Crie', 'Dort'];
 
+
+ include 'assets\pages\header.html';  // Include header.php file
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +33,7 @@ $actions = ['Court', 'Saute', 'Nage', 'Vole', 'Crie', 'Dort'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poc</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets\pages\header.css">
 </head>
 <body>
     <div class="container">
