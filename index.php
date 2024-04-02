@@ -12,9 +12,9 @@
             <?php
             // Connexion à la base de données
             $host = 'localhost';
-            $db   = 'poc_films';
-            $user = 'root';
-            $pass = '';
+            $db   = 'nom_de_la_base_de_donnees';
+            $user = 'username';
+            $pass = 'password';
             $charset = 'utf8mb4';
 
             $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
