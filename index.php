@@ -40,6 +40,7 @@ $actions = ['Court', 'Saute', 'Nage', 'Vole', 'Crie', 'Dort'];
         <h1>SORTIES DE LA SEMAINE</h1>
         <div class="inner-container">
             <?php
+            include 'assets/pages/navbar.php';  // Include navbar.php file
             // Générer le HTML
             while ($row = $result->fetch_assoc())
             {
